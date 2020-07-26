@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+  }
+  .n-head:hover {
+    color:yellow!important;
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: rgb(108 26 108);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #ffffff;
+    padding: 16px;
+    text-decoration: none;
+  }
+   
+  .sidebar a.active {
+    background-color: #f8f9fa;
+    color: rgb(108 26 108);
+    border: 1px solid #f8f9fa;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+  }
+  
+  .sidebar  .n-nav a:hover:not(.active) {
+    background-color:#f8f9fa;
+    color: rgb(108 26 108);
+    border: 1px solid #f8f9fa;
+    border-top-left-radius: 20%;
+    border-bottom-left-radius: 20%;
+  }
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  @media screen and (max-width: 460px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  .no-arrow{
+    content: none!important;
+  }
+  .cal-b:hover{
+background-color: #1bfb27!important;
+border: none!important;
+  }
+.s-form{
+border: none;
+width: 7rem;
+  }
